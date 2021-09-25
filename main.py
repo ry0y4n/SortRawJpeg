@@ -27,12 +27,14 @@ gauth.SaveCredentialsFile("mycreds.txt")
 #Googleドライブの認証処理
 drive = GoogleDrive(gauth)
 
-#アップロードするフォルダパス指定
-# path = r"/Users/momosuke/SortRawJpeg/test"
+#RAFデータの拡張子を設定する
 raw_ext = ".RAF"
+
+#GoogleDrive上のフォルダIDを設定する
 raw_folder_id = "1R-_sa3ZJXmYg0jyksCzBm2xKFJUBrZpu"
 jpg_folder_id = "1FX_HoNHVfL8sIX0uSaNEWihW7v_qK1jD"
 
+#アップロードしたいローカルフォルダのパスを入力させる
 path = input("Enter your path: ")
 
 print("Start Uploading...")
